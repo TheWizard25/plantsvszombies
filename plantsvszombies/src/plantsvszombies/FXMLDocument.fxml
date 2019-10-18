@@ -24,7 +24,7 @@
       <AnchorPane prefHeight="374.0" prefWidth="700.0" style="-fx-background-color: #000;" />
       <ImageView fitHeight="403.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: .7;">
          <image>
-            <Image url="@../../../Static/images/pvz-cover.jpg" />
+            <Image url="@../Static/images/pvz-cover.jpg" />
          </image>
       </ImageView>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
@@ -35,7 +35,7 @@
                      <graphic>
                         <ImageView fitHeight="27.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Static/images/mainmenu-newgame.png" />
+                              <Image url="@../Static/images/mainmenu-newgame.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="HAND" />
@@ -50,7 +50,7 @@
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Static/images/mainmenu-resume.png" />
+                              <Image url="@../Static/images/mainmenu-resume.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -62,7 +62,7 @@
                      <graphic>
                         <ImageView fitHeight="28.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Static/images/mainmenu-settings.png" />
+                              <Image url="@../Static/images/mainmenu-settings.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -74,7 +74,7 @@
                      <graphic>
                         <ImageView fitHeight="28.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Static/images/mainmenu-exit.png" />
+                              <Image url="@../Static/images/mainmenu-exit.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -84,9 +84,9 @@
                   </Button>
                </children>
             </Pane>
-            <ImageView fitHeight="76.0" fitWidth="474.0" layoutX="114.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="76.0" fitWidth="474.0" layoutX="113.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Static/images/mainmenu-cover.png" />
+                  <Image url="@../Static/images/mainmenu-cover2.png" />
                </image>
                <effect>
                   <Lighting diffuseConstant="1.31" specularConstant="0.81" specularExponent="40.0" surfaceScale="2.78">
