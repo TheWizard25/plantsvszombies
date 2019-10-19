@@ -31,15 +31,20 @@ public class FXMLMainMenuController implements Initializable {
     private void clickNewGame(ActionEvent event) throws IOException {
     handleButtonAction(event, "FXMLCreateUser.fxml");
    }
+    @FXML
     private void clickResume(ActionEvent event) throws IOException {
     handleButtonAction(event, "FXMLCreateUser.fxml");
    }
+    @FXML
     private void clickSettings(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLCreateUser.fxml");
+    handleButtonAction(event, "FXMLSetting.fxml");
    }
-    private void clickExit(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLCreateUser.fxml");
-   }
+    @FXML private javafx.scene.control.Button closeButton;
+    @FXML
+    private void clickExit(ActionEvent event) throws IOException 
+    {
+         ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+    }
 
     private void handleButtonAction(ActionEvent event, String s) throws IOException{
             Parent create_user_parent = FXMLLoader.load(getClass().getResource(s));
