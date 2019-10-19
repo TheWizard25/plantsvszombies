@@ -27,24 +27,32 @@ public class FXMLMainMenuController implements Initializable {
     
     @FXML
     private Label label;
-    Button[] button =new Button[3];
     @FXML
-    private void handleButtonAction(ActionEvent event) throws IOException {
-            Parent create_user_parent = FXMLLoader.load(getClass().getResource("FXMLCreateUser.fxml"));
+    private void clickNewGame(ActionEvent event) throws IOException {
+    handleButtonAction(event, "FXMLCreateUser.fxml");
+   }
+    private void clickResume(ActionEvent event) throws IOException {
+    handleButtonAction(event, "FXMLCreateUser.fxml");
+   }
+    private void clickSettings(ActionEvent event) throws IOException {
+    handleButtonAction(event, "FXMLCreateUser.fxml");
+   }
+    private void clickExit(ActionEvent event) throws IOException {
+    handleButtonAction(event, "FXMLCreateUser.fxml");
+   }
+
+    private void handleButtonAction(ActionEvent event, String s) throws IOException{
+            Parent create_user_parent = FXMLLoader.load(getClass().getResource(s));
             Scene create_user_scene = new Scene(create_user_parent);
             Stage game_stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
             game_stage.setScene(create_user_scene);
             game_stage.show();
-
-        
+ 
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        for(int i=0;i<button.length;i++){
-            button[i]=new Button();
-        }
     }    
     
 }
