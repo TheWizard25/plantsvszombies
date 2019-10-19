@@ -19,7 +19,7 @@ public class Plantsvszombies extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("fxml_Mainmenu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLMainMenu.fxml"));
         
         Scene scene = new Scene(root);
         

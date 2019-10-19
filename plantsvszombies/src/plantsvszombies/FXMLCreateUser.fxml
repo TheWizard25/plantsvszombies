@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.75" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLCreateUserController">
+   <children>
+      <ImageView fitHeight="425.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Static/images/1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="406.0" prefWidth="720.0">
+         <children>
+            <Pane prefHeight="406.0" prefWidth="720.0">
+               <children>
+                  <ImageView fitHeight="257.0" fitWidth="246.0" layoutX="34.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/createuser_plant.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="226.0" fitWidth="357.0" layoutX="308.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/createuser_thought.png" />
+                     </image>
+                     <effect>
+                        <Reflection fraction="0.8" topOffset="-7.0" topOpacity="0.25" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="228.0" layoutX="343.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/createuser_enteryourname.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" contrast="0.07" saturation="1.0" />
+                     </effect>
+                  </ImageView>
+                  <TextField layoutX="350.0" layoutY="308.0" prefHeight="44.0" prefWidth="221.0" promptText="Enter your name" style="-fx-background-radius: 10; -fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10; -fx-border-width: 3; -fx-opacity: .95; -fx-text-fill: white; -fx-prompt-text-fill: rgba(255,255,255,0.6); -fx-prompt-text-opacity: .7;">
+                     <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
