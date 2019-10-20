@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="plantsvszombies.FXMLInfoController">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="700.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Static/images/pvz-cover.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="146.0" layoutY="75.0" prefHeight="222.0" prefWidth="415.0" style="-fx-border-color: white; -fx-border-width: 4; -fx-border-radius: 20; -fx-background-color: rgba(0,0,0,0.4);">
+         <children>
+            <Pane layoutX="76.0" layoutY="22.0" prefHeight="56.0" prefWidth="256.0" style="-fx-border-color: black; -fx-border-width: 4; -fx-border-radius: 20;">
+               <children>
+                  <Text fill="WHITE" layoutX="46.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Developers">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="27.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nitesh Jaiswal    &amp;    Hemant Dhankar">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="296.0" layoutY="334.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-opacity: .8;" text="Go Back">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

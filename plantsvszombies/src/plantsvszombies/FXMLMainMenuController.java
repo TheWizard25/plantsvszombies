@@ -45,7 +45,16 @@ public class FXMLMainMenuController implements Initializable {
     {
          ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
     }
+    @FXML
+    private void clickInfo(ActionEvent event) throws IOException {
+    handleButtonAction(event, "FXMLInfo.fxml");
+   }
+    @FXML
+    private void clickController(ActionEvent event) throws IOException {
+    handleButtonAction(event, "FXMLSetting.fxml");
+   }
 
+    
     private void handleButtonAction(ActionEvent event, String s) throws IOException{
             Parent create_user_parent = FXMLLoader.load(getClass().getResource(s));
             Scene create_user_scene = new Scene(create_user_parent);

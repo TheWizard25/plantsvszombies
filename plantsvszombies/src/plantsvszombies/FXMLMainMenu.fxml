@@ -99,6 +99,30 @@
                   </Lighting>
                </effect>
             </ImageView>
+            <Button layoutX="609.0" layoutY="324.0" mnemonicParsing="false" onAction="#clickInfo" prefHeight="40.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/mainmenu-info.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="58.0" layoutY="302.0" mnemonicParsing="false" onAction="#clickController" style="-fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/mainmenu-controller.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
    </children>
