@@ -51,7 +51,7 @@ public class FXMLMainMenuController implements Initializable {
    }
     @FXML
     private void clickController(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLSetting.fxml");
+    handleButtonAction(event, "FXMLLawn.fxml");
    }
 
     
