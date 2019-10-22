@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="plantsvszombies.FXMLlevelpageController">
+   <children>
+      <ImageView fitHeight="392.0" fitWidth="713.0" layoutX="-3.0" opacity="0.71" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="2.0" layoutY="1.0" prefHeight="384.0" prefWidth="703.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="308.0" layoutX="215.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/picturetopeople.org-0a8c7adf4b866082e9d170fddf0eb78f06fbdae8045d0e8ffb.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="93.0" layoutX="112.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/zombie_PNG21.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="114.0" fitWidth="80.0" layoutX="529.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/Zombie-Transparent.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="104.0" layoutX="61.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/images/normalzombie.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="179.0" fitWidth="116.0" layoutX="194.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/images/2ndlevelzombie.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="116.0" layoutX="380.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/images/highdamagezombie.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="178.0" fitWidth="180.0" layoutX="509.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/12-2-plants-vs-zombies-garden-warfare-png.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="61.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="67.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/picturetopeople.org-c170b3422cf2df01079052fb14c0ea28f1dddf1ce05acf917b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="235.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/picturetopeople.org-bf6d87f0dd3df49aa3944dce6813e67e164ae3f9ac6a8196d1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="409.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/picturetopeople.org-9b59433dbeb8d113d6f4be9bfc8cb612a2f6a964068a2c9bc5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="576.0" layoutY="315.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/picturetopeople.org-d454174a72e5c2f7491aa2217ae1753c563df7b75b0ccedc0d.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
