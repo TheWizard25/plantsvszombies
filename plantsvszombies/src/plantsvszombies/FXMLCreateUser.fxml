@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.Reflection?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" opacity="0.75" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLCreateUserController">
+<AnchorPane id="AnchorPane" opacity="0.75" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLCreateUserController">
    <children>
       <ImageView fitHeight="425.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -46,6 +47,15 @@
                         <Font name="Bauhaus 93" size="20.0" />
                      </font>
                   </TextField>
+                  <Button layoutX="596.0" layoutY="313.0" mnemonicParsing="false" onAction="#clicknext" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Static/images/createusernext.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </Pane>
          </children>
