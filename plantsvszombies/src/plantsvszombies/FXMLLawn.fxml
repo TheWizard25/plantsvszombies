@@ -39,7 +39,7 @@
       </Pane>
       <ImageView fitHeight="433.0" fitWidth="700.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Static/images/lawn-cover.png" />
+            <Image url="@../Static/images/lawn-cover-01.jpeg" />
          </image></ImageView>
       <GridPane layoutX="115.0" layoutY="133.0" prefHeight="339.0" prefWidth="557.0">
          <columnConstraints>
@@ -102,6 +102,51 @@
             <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
             <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="9" GridPane.rowIndex="4" />
             <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="73.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/lawn_mower.gif" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/lawn_mower.gif" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/lawn_mower.gif" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/lawn_mower.gif" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Static/images/lawn_mower.gif" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
       <GridPane layoutX="161.0" layoutY="6.0" prefHeight="78.0" prefWidth="528.0" style="-fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-color: rgba(255,255,255,0.5); -fx-background-radius: 10;">
