@@ -15,42 +15,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 /**
+ * FXML Controller class
  *
  * @author HD
  */
-public class FXMLMainMenuController implements Initializable {
-    
-    @FXML
-    private Label label;
-    @FXML
-    private void clickNewGame(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLCreateUser.fxml");
-   }
-    @FXML
-    private void clickResume(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLResumeGame.fxml");
-   }
-    @FXML
-    private void clickSettings(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLSetting.fxml");
-   }
-    @FXML private javafx.scene.control.Button closeButton;
-    @FXML
-    private void clickExit(ActionEvent event) throws IOException 
-    {
-         ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-    }
-    @FXML
-    private void clickInfo(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLInfo.fxml");
-   }
-    @FXML
-    private void clickController(ActionEvent event) throws IOException {
+public class FXMLResumeGameController implements Initializable {
+         @FXML
+    private void clickselectgame(ActionEvent event) throws IOException {
     handleButtonAction(event, "FXMLLawn.fxml");
    }
 
@@ -63,7 +37,11 @@ public class FXMLMainMenuController implements Initializable {
             game_stage.show();
  
     }
-    
+
+
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
