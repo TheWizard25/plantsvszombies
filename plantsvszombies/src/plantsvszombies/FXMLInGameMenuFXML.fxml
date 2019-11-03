@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="294.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.InGameMenuFXMLController">
+   <children>
+      <ImageView fitHeight="294.0" fitWidth="490.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="171.0" layoutY="83.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Static/images/INAGMESG.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="171.0" layoutY="139.0" mnemonicParsing="false" onAction="#ingameresume" prefHeight="13.0" prefWidth="148.0">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Static/images/INGAMERESUME.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="142.0" layoutY="225.0" mnemonicParsing="false" onAction="#BACKTOMAINMENU">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Static/images/INGAMEBACK.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="91.0" fitWidth="164.0" layoutX="366.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Static/images/cherrybomb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="130.0" layoutX="25.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Static/images/createuser_blueplant.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
