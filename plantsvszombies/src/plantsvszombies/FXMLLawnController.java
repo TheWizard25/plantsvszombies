@@ -30,12 +30,12 @@ public class FXMLLawnController implements Initializable {
     @FXML
     private void InGameMenu(ActionEvent event) throws IOException 
     {
-    handleButtonAction(event, "FXMLInGameMenuFXML.fxml");
+    handleButtonAction(event, "FXMLInGameMenu.fxml");
    }
     private void handleButtonAction(ActionEvent event, String s) throws IOException{
             Parent create_user_parent = FXMLLoader.load(getClass().getResource(s));
             Scene create_user_scene = new Scene(create_user_parent);
-            Stage game_stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
+            Stage game_stage= new Stage();
             game_stage.setScene(create_user_scene);
             game_stage.show();
  

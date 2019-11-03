@@ -22,7 +22,7 @@ import javafx.stage.Stage;
  *
  * @author nitesh
  */
-public class FXMLInGameMenuFXMLController implements Initializable {
+public class FXMLInGameMenuController implements Initializable {
 
     /**
      * Initializes the controller class.
