@@ -7,6 +7,7 @@ package plantsvszombies;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,15 +26,19 @@ import javafx.stage.Stage;
  */
 public class FXMLMainMenuController implements Initializable {
     
+    
+    
     @FXML
     private Label label;
+
+   
     @FXML
     private void clickNewGame(ActionEvent event) throws IOException {
     handleButtonAction(event, "FXMLCreateUser.fxml");
    }
     @FXML
     private void clickResume(ActionEvent event) throws IOException {
-    handleButtonAction(event, "FXMLResumeGame.fxml");
+        handleButtonAction(event, "FXMLResumeGame.fxml");
    }
     @FXML
     private void clickSettings(ActionEvent event) throws IOException {
@@ -63,6 +68,9 @@ public class FXMLMainMenuController implements Initializable {
             game_stage.show();
  
     }
+    
+    
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

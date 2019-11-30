@@ -36,7 +36,7 @@
             </ImageView>
             <AnchorPane layoutX="13.0" layoutY="135.0" prefHeight="254.0" prefWidth="695.0" style="-fx-border-color: white; -fx-border-width: 5; -fx-border-radius: 20;">
                <children>
-                  <Pane layoutX="20.0" layoutY="16.0" prefHeight="223.0" prefWidth="164.0">
+                  <Pane id="panelevel1" fx:id="panelevel1" layoutX="20.0" layoutY="16.0" opacity="0.0" prefHeight="223.0" prefWidth="164.0">
                      <children>
                         <Button layoutX="32.0" layoutY="176.0" mnemonicParsing="false" onAction="#clicklevel1" opacity="0.7" prefHeight="26.0" prefWidth="67.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: black;">
                            <graphic>
@@ -60,7 +60,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="184.0" layoutY="16.0" prefHeight="223.0" prefWidth="164.0">
+                  <Pane id="panelevel2" fx:id="panelevel2" layoutX="184.0" layoutY="16.0" opacity="0.35" prefHeight="223.0" prefWidth="164.0">
                      <children>
                         <Button layoutX="28.0" layoutY="176.0" mnemonicParsing="false" opacity="0.7" prefHeight="26.0" prefWidth="67.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: black;">
                            <graphic>
@@ -84,7 +84,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="353.0" layoutY="16.0" prefHeight="223.0" prefWidth="164.0">
+                  <Pane id="panelevel3" fx:id="panelevel3" layoutX="353.0" layoutY="16.0" opacity="0.35" prefHeight="223.0" prefWidth="164.0">
                      <children>
                         <Button layoutX="28.0" layoutY="176.0" mnemonicParsing="false" opacity="0.7" prefHeight="26.0" prefWidth="67.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: black;">
                            <graphic>
@@ -108,7 +108,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="517.0" layoutY="16.0" prefHeight="223.0" prefWidth="164.0">
+                  <Pane id="panelevel4" fx:id="panelevel4" layoutX="517.0" layoutY="16.0" opacity="0.35" prefHeight="223.0" prefWidth="164.0">
                      <children>
                         <Button layoutX="31.0" layoutY="176.0" mnemonicParsing="false" opacity="0.7" prefHeight="26.0" prefWidth="67.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: black;">
                            <graphic>

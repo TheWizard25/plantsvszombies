@@ -42,7 +42,7 @@
                         <ColorAdjust brightness="-1.0" contrast="0.07" saturation="1.0" />
                      </effect>
                   </ImageView>
-                  <TextField layoutX="350.0" layoutY="308.0" prefHeight="44.0" prefWidth="221.0" promptText="Enter your name" style="-fx-background-radius: 10; -fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10; -fx-border-width: 3; -fx-opacity: .95; -fx-text-fill: white; -fx-prompt-text-fill: rgba(255,255,255,0.6); -fx-prompt-text-opacity: .7;" styleClass="mytf">
+                  <TextField fx:id="username" layoutX="350.0" layoutY="308.0" prefHeight="44.0" prefWidth="221.0" promptText="Enter your name" style="-fx-background-radius: 10; -fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10; -fx-border-width: 3; -fx-opacity: .95; -fx-text-fill: white; -fx-prompt-text-fill: rgba(255,255,255,0.6); -fx-prompt-text-opacity: .7;" styleClass="mytf">
                      <font>
                         <Font name="Bauhaus 93" size="20.0" />
                      </font>

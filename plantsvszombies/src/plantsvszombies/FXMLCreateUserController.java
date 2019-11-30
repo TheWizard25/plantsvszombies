@@ -7,6 +7,7 @@ package plantsvszombies;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,8 +16,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 /**
  * FXML Controller class
  *
@@ -27,8 +28,18 @@ public class FXMLCreateUserController implements Initializable {
     /**
      * Initializes the controller class.
      */
-     @FXML
-    private void clicknext(ActionEvent event) throws IOException {
+    static User newuser;
+    @FXML
+    private TextField username;
+    String s;
+    
+    
+    @FXML
+    private void clicknext(ActionEvent event) throws IOException{
+    s=username.getText();
+    newuser= new User(s);
+    Game.adduser(newuser);
+    Game.printusers();
     handleButtonAction(event, "FXMLlevelpage.fxml");
    }
 
