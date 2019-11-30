@@ -38,7 +38,7 @@ public class FXMLlevelpageController implements Initializable {
     @FXML
     private Pane panelevel4;
     
-    ArrayList<Integer> unlockedlevels;    
+    static ArrayList<Integer> unlockedlevels;    
     public int getSelectedlevel() {
         return selectedlevel;
     }

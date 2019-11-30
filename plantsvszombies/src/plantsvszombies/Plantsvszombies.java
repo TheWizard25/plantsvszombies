@@ -11,6 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -23,10 +24,10 @@ import plantsvszombies.FXMLlevelpageController;
  * @author HD
  */
 
-class User{
+class User implements Serializable{
     private String username;
     private int currentlevel;
-    private ArrayList<Integer> unlockedlevels;
+    private static ArrayList<Integer> unlockedlevels;
 
     public User(String user){
         this.username=user;
@@ -45,7 +46,7 @@ class User{
 
 
 
-    public ArrayList<Integer> getUnlockedlevels() {
+    public static ArrayList<Integer> getUnlockedlevels() {
         return unlockedlevels;
     }
 
@@ -73,6 +74,10 @@ class Game
 {
     Parent root;
     private static ArrayList<User> userlist =new ArrayList<User>();
+
+    public static ArrayList<User> getUserlist() {
+        return userlist;
+    }
     Stage stage;
     Scene scene;
     
@@ -110,19 +115,19 @@ class Game
     
 }
 
-public class Plantsvszombies extends Application 
+public class Plantsvszombies extends Application implements Serializable 
 {
     Game g;
     
     
     
-    	public static void serialize(Game g, String filename) throws Exception {
+    	public static void serialize(User u, String filename) throws Exception {
 		try
 	    {    
 	        FileOutputStream file = new FileOutputStream(filename); 
 	        ObjectOutputStream out = new ObjectOutputStream(file); 
 
-	        out.writeObject(g); 
+	        out.writeObject(u); 
 	          
 	        out.close(); 
 	        file.close(); 
@@ -135,12 +140,12 @@ public class Plantsvszombies extends Application
 		
 	}
 	
-	public static Game deserialize(Game g, String filename) {
+	public static User deserialize(User u, String filename) {
 		 try
 	        {    
 	            FileInputStream file = new FileInputStream(filename); 
 	            ObjectInputStream in = new ObjectInputStream(file); 
-	            g = (Game)in.readObject(); 
+	            u = (User)in.readObject(); 
 	              
 	            in.close(); 
 	            file.close(); 
@@ -158,24 +163,24 @@ public class Plantsvszombies extends Application
 	            System.out.println("ClassNotFoundException is caught"); 
 	        } 
 	  
-		 return g;
+		 return u;
 	    } 
 
-        public void resumegame(Game g,String nametoload) throws Exception{
+        public void resumegame(User u,String nametoload) throws Exception{
 			String filename = nametoload+".txt";
 			File f = new File(filename);
 			if(f.exists()) {
 				System.out.println("Saved Game found. Loading...");
-				g=deserialize(g, filename);
+				u=deserialize(u, filename);
 				g.load_game();
-				serialize(g,filename);
+				serialize(u,filename);
 			}				
 
         }
         
-        public void savegame(Game g, String name) throws Exception{
+        public static void savegame(User u, String name) throws Exception{
             String temp= name+".txt";
-            serialize(g, temp);
+            serialize(u, temp);
         }
         
         

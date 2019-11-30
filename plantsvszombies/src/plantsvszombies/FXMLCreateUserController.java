@@ -35,11 +35,12 @@ public class FXMLCreateUserController implements Initializable {
     
     
     @FXML
-    private void clicknext(ActionEvent event) throws IOException{
+    private void clicknext(ActionEvent event) throws IOException, Exception{
     s=username.getText();
     newuser= new User(s);
     Game.adduser(newuser);
     Game.printusers();
+    Plantsvszombies.savegame(newuser, newuser.getUsername());
     handleButtonAction(event, "FXMLlevelpage.fxml");
    }
 

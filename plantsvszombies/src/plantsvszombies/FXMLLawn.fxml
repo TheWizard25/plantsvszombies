@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="519.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLLawnController">
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="519.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLLawnController">
     <stylesheets>
         <URL value="@fxmllawn.css" />
     </stylesheets>
@@ -167,27 +167,27 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="Sunflower" fitHeight="55.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <ImageView fx:id="Sunflower" fitHeight="55.0" fitWidth="104.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                <image>
                   <Image url="@../Static/images/sunflower2.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="peashooter" fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+            <ImageView fx:id="peashooter" fitHeight="67.0" fitWidth="67.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                <image>
                   <Image url="@../Static/images/peashooter.gif" />
                </image>
             </ImageView>
-            <ImageView fx:id="wallnut" fitHeight="51.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+            <ImageView fx:id="wallnut" fitHeight="51.0" fitWidth="73.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
                <image>
                   <Image url="@../Static/images/wallnut.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="iceshooter" fitHeight="56.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+            <ImageView fx:id="iceshooter" fitHeight="56.0" fitWidth="70.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                <image>
                   <Image url="@../Static/images/iceshooter1.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BWallnut" fitHeight="52.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+            <ImageView fx:id="BWallnut" fitHeight="52.0" fitWidth="87.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
                <image>
                   <Image url="@../Static/images/wallnutblast.png" />
                </image>

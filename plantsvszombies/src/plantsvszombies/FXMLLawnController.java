@@ -7,6 +7,7 @@ package plantsvszombies;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
@@ -14,6 +15,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -102,6 +104,33 @@ public class FXMLLawnController implements Initializable
         ll.setToX(+450);
         ll.setCycleCount(100);
         //tt.setAutoReverse(true);*/
+        ArrayList<Integer> ul=User.getUnlockedlevels();
+        for(int i: ul){
+            if(i==1){
+                Sunflower.setOpacity(1);
+                Sunflower.setCursor(Cursor.HAND);
+                peashooter.setOpacity(1);
+                peashooter.setCursor(Cursor.HAND);
+
+                
+            }else
+                if(i==2){
+                wallnut.setOpacity(1);
+                    wallnut.setCursor(Cursor.HAND);
+                
+                }else
+                    if(i==3){
+                    iceshooter.setOpacity(1);
+                    iceshooter.setCursor(Cursor.HAND);
+                    }else
+                        if(i==4){
+                            BWallnut.setOpacity(1);
+                            BWallnut.setCursor(Cursor.HAND);
+                        }
+                
+              
+        }
+        
         TranslateTransition zz1 = new TranslateTransition();
         TranslateTransition zz2 = new TranslateTransition();
         TranslateTransition zz3 = new TranslateTransition();
