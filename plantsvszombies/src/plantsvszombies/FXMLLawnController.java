@@ -17,7 +17,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -26,31 +31,43 @@ import javafx.util.Duration;
  *
  * @author HD
  */
-public class FXMLLawnController implements Initializable {
+public class FXMLLawnController implements Initializable 
+{
+    @FXML
+    AnchorPane ap;
+    private double startDragx,startDragy;
+    @FXML
+    private ImageView lawnmover1;
+    @FXML
+    private ImageView Sunflower;
+    @FXML
+    private ImageView peashooter;
+    @FXML
+    private GridPane gp;
+    @FXML
+    private GridPane apl;
     @FXML
     private void InGameMenu(ActionEvent event) throws IOException 
     {
     handleButtonAction(event, "FXMLInGameMenu.fxml");
-   }
+    }
+    
+    
     private void handleButtonAction(ActionEvent event, String s) throws IOException{
             Parent create_user_parent = FXMLLoader.load(getClass().getResource(s));
             Scene create_user_scene = new Scene(create_user_parent);
             Stage game_stage= new Stage();
             game_stage.setScene(create_user_scene);
             game_stage.show();
- 
     }
-    @FXML
-    private ImageView lawnmover1;
-    @FXML
-    private ImageView Zombie;
-    @FXML
-    private ImageView Peamoving;
+    
+    
+    
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        TranslateTransition tt = new TranslateTransition();
+        /*TranslateTransition tt = new TranslateTransition();
         tt.setDuration(Duration.seconds(5));
         tt.setNode(lawnmover1);
         tt.setToX(+600);
@@ -71,10 +88,39 @@ public class FXMLLawnController implements Initializable {
         zz.setCycleCount(1);
         tt.play();
         ll.play();
-        zz.play();
+        zz.play();*/
+        Sunflower.setOnMousePressed(e->
+        {
+            startDragx=e.getSceneX();
+            startDragy=e.getSceneY();
+            System.out.println(startDragx+" "+startDragy);
+            
+        });
+        Sunflower.setOnMouseReleased(e->
+        {
+            
+            Sunflower.setTranslateX(e.getSceneX()-startDragx);
+            Sunflower.setTranslateY(e.getSceneY()-startDragy);
+            
+            Sunflower.setOnMousePressed(null);
+            Sunflower.setOnMouseReleased(null);
+            
+            Image sunflower1= new Image("/../Static/images/sunflower2.png");
+            ImageView sn1=new ImageView(sunflower1);
+            apl.getChildren().add(sn1);
+            sn1.setLayoutY(startDragy);
+            sn1.setLayoutX(startDragx);
+            
+            //Image snf=new Image("@../Static/images/sunflower2.png");
+            //ImageView sunfl=new ImageView(snf);
+            
+        });
+        
+        
+        
         
         
         
     }      
-    
+
 }

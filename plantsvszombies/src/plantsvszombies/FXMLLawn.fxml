@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLLawnController">
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="519.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.FXMLLawnController">
     <stylesheets>
         <URL value="@fxmllawn.css" />
     </stylesheets>
@@ -53,7 +53,7 @@
          <image>
             <Image url="@../Static/images/lawn-cover-01.jpeg" />
          </image></ImageView>
-      <GridPane layoutX="115.0" layoutY="133.0" prefHeight="339.0" prefWidth="557.0">
+      <GridPane fx:id="gp" layoutX="115.0" layoutY="133.0" prefHeight="339.0" prefWidth="557.0">
          <columnConstraints>
             <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
@@ -74,46 +74,6 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="9" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="8" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="7" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="6" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="5" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="75.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="73.0" style="-fx-padding: 0; -fx-background-color: transparent;" GridPane.columnIndex="2" />
             <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;">
                <graphic>
                   <ImageView fitHeight="59.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
@@ -154,86 +114,46 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" prefHeight="78.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <ImageView fitHeight="98.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 2;" GridPane.columnIndex="1">
-               <image>
-                  <Image url="@../Static/images/peashooter.gif" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="Peamoving" fitHeight="15.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
-               <image>
-                  <Image url="@../Static/images/Giant_Pea2.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="Zombie" fitHeight="83.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
-               <image>
-                  <Image url="@../Static/images/zombie1.gif" />
-               </image>
-            </ImageView>
          </children>
       </GridPane>
-      <GridPane layoutX="161.0" layoutY="6.0" prefHeight="78.0" prefWidth="528.0" style="-fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-color: rgba(255,255,255,0.5); -fx-background-radius: 10;">
+      <GridPane fx:id="apl" layoutX="161.0" layoutY="6.0" prefHeight="78.0" prefWidth="528.0" style="-fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-color: rgba(255,255,255,0.5); -fx-background-radius: 10;">
         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="172.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="0.0" prefWidth="71.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="0.0" prefWidth="75.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="0.0" prefWidth="78.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="77.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="63.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="155.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="0.0" prefWidth="84.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="0.0" prefWidth="71.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="0.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="64.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="79.0" style="-fx-background-color: transparent;" GridPane.columnIndex="1">
-               <graphic>
-                  <ImageView fitHeight="39.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Static/images/sunflower2.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: transparent;" GridPane.columnIndex="2">
-               <graphic>
-                  <ImageView fitHeight="41.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Static/images/peashooter.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="85.0" style="-fx-background-color: transparent;" GridPane.columnIndex="3">
-               <graphic>
-                  <ImageView fitHeight="44.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Static/images/wallnut.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="80.0" style="-fx-background-color: transparent;" GridPane.columnIndex="4">
-               <graphic>
-                  <ImageView fitHeight="49.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Static/images/iceshooter1.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="67.0" style="-fx-background-color: transparent;" GridPane.columnIndex="5">
-               <graphic>
-                  <ImageView fitHeight="42.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Static/images/wallnutblast.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
+            <ImageView fx:id="Sunflower" fitHeight="55.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../Static/images/sunflower2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="peashooter" fitHeight="41.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../Static/images/peashooter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../Static/images/wallnut.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../Static/images/iceshooter1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../Static/images/wallnutblast.png" />
+               </image>
+            </ImageView>
             <TextField style="-fx-background-color: transparent;" text="Available Plants">
                <font>
                   <Font name="Bauhaus 93" size="20.0" />

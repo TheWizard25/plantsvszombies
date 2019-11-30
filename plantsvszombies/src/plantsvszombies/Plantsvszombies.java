@@ -69,12 +69,18 @@ class User{
 }
 
 
-class Game{
+class Game
+{
+    Parent root;
     private static ArrayList<User> userlist =new ArrayList<User>();
     Stage stage;
+    Scene scene;
     
-    public Game(Stage sta){
-    this.stage=sta;
+    public Game(Stage sta)
+    {
+       
+        this.stage=sta;
+        
     }
     
     public static void adduser(User u)
@@ -88,15 +94,15 @@ class Game{
     }
     
     public void start_game() throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLMainMenu.fxml"));        
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("FXMLMainMenu.fxml"));        
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     
     }
     public void load_game() throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLLawn.fxml"));        
-        Scene scene = new Scene(root);
+        root = FXMLLoader.load(getClass().getResource("FXMLLawn.fxml"));        
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     
@@ -104,7 +110,9 @@ class Game{
     
 }
 
-public class Plantsvszombies extends Application {
+public class Plantsvszombies extends Application 
+{
+    Game g;
     
     
     
@@ -172,10 +180,11 @@ public class Plantsvszombies extends Application {
         
         
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception 
+    {
         
         
-        Game g=new Game(stage);
+        g=new Game(stage);
         g.start_game();
     }
 
