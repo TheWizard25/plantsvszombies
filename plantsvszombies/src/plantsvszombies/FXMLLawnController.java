@@ -37,11 +37,32 @@ public class FXMLLawnController implements Initializable
     AnchorPane ap;
     private double startDragx,startDragy;
     @FXML
+    private ImageView z1;
+    @FXML
+    private ImageView z2;
+    @FXML
+    private ImageView z3;
+    @FXML
+    private ImageView z4;
+    @FXML
+    private ImageView z5;
+    @FXML
+    private ImageView z6;
+    @FXML
+    private ImageView z7;
+    
+    @FXML
     private ImageView lawnmover1;
     @FXML
     private ImageView Sunflower;
     @FXML
     private ImageView peashooter;
+    @FXML
+    private ImageView wallnut;
+    @FXML
+    private ImageView iceshooter;
+    @FXML
+    private ImageView BWallnut;
     @FXML
     private GridPane gp;
     @FXML
@@ -80,15 +101,47 @@ public class FXMLLawnController implements Initializable
         ll.setNode(Peamoving);
         ll.setToX(+450);
         ll.setCycleCount(100);
-        //tt.setAutoReverse(true);
-        TranslateTransition zz = new TranslateTransition();
-        zz.setDuration(Duration.seconds(20));
-        zz.setNode(Zombie);
-        zz.setToX(-450);
-        zz.setCycleCount(1);
-        tt.play();
-        ll.play();
-        zz.play();*/
+        //tt.setAutoReverse(true);*/
+        TranslateTransition zz1 = new TranslateTransition();
+        TranslateTransition zz2 = new TranslateTransition();
+        TranslateTransition zz3 = new TranslateTransition();
+        TranslateTransition zz4 = new TranslateTransition();
+        TranslateTransition zz5 = new TranslateTransition();
+        TranslateTransition zz6 = new TranslateTransition();
+        TranslateTransition zz7 = new TranslateTransition();
+        
+        zz1.setDuration(Duration.seconds(20+10));
+        zz2.setDuration(Duration.seconds(30+10));
+        zz3.setDuration(Duration.seconds(25+10));
+        zz4.setDuration(Duration.seconds(15+10-2));
+        zz5.setDuration(Duration.seconds(10+10+5));
+        zz6.setDuration(Duration.seconds(35+10));
+        zz7.setDuration(Duration.seconds(23+10));
+        
+        zz1.setNode(z1);
+        zz2.setNode(z2);
+        zz3.setNode(z3);
+        zz4.setNode(z4);
+        zz5.setNode(z5);
+        zz6.setNode(z6);
+        zz7.setNode(z7);
+        
+        
+        zz1.setToX(-450);
+        zz2.setToX(-450);
+        zz3.setToX(-450);
+        zz4.setToX(-450);
+        zz5.setToX(-450);
+        zz6.setToX(-450);
+        zz7.setToX(-450);
+        
+        zz1.play();
+        zz2.play();
+        zz3.play();
+        zz4.play();
+        zz5.play();
+        zz6.play();
+        zz7.play();
         Sunflower.setOnMousePressed(e->
         {
             startDragx=e.getSceneX();
@@ -105,14 +158,120 @@ public class FXMLLawnController implements Initializable
             Sunflower.setOnMousePressed(null);
             Sunflower.setOnMouseReleased(null);
             
-            Image sunflower1= new Image("/../Static/images/sunflower2.png");
+            /*Image sunflower1= new Image("/../Static/images/sunflower2.png");
             ImageView sn1=new ImageView(sunflower1);
             apl.getChildren().add(sn1);
             sn1.setLayoutY(startDragy);
             sn1.setLayoutX(startDragx);
             
             //Image snf=new Image("@../Static/images/sunflower2.png");
-            //ImageView sunfl=new ImageView(snf);
+            //ImageView sunfl=new ImageView(snf);*/
+            
+        });
+        peashooter.setOnMousePressed(e->
+        {
+            startDragx=e.getSceneX();
+            startDragy=e.getSceneY();
+            System.out.println(startDragx+" "+startDragy);
+            
+        });
+        peashooter.setOnMouseReleased(e->
+        {
+            
+            peashooter.setTranslateX(e.getSceneX()-startDragx);
+            peashooter.setTranslateY(e.getSceneY()-startDragy);
+            
+            peashooter.setOnMousePressed(null);
+            peashooter.setOnMouseReleased(null);
+            
+            /*Image sunflower1= new Image("/../Static/images/sunflower2.png");
+            ImageView sn1=new ImageView(sunflower1);
+            apl.getChildren().add(sn1);
+            sn1.setLayoutY(startDragy);
+            sn1.setLayoutX(startDragx);
+            
+            //Image snf=new Image("@../Static/images/sunflower2.png");
+            //ImageView sunfl=new ImageView(snf);*/
+            
+        });
+        
+        wallnut.setOnMousePressed(e->
+        {
+            startDragx=e.getSceneX();
+            startDragy=e.getSceneY();
+            System.out.println(startDragx+" "+startDragy);
+            
+        });
+        wallnut.setOnMouseReleased(e->
+        {
+            
+            wallnut.setTranslateX(e.getSceneX()-startDragx);
+            wallnut.setTranslateY(e.getSceneY()-startDragy);
+            
+            wallnut.setOnMousePressed(null);
+            wallnut.setOnMouseReleased(null);
+            
+            /*Image sunflower1= new Image("/../Static/images/sunflower2.png");
+            ImageView sn1=new ImageView(sunflower1);
+            apl.getChildren().add(sn1);
+            sn1.setLayoutY(startDragy);
+            sn1.setLayoutX(startDragx);
+            
+            //Image snf=new Image("@../Static/images/sunflower2.png");
+            //ImageView sunfl=new ImageView(snf);*/
+            
+        });
+        
+        iceshooter.setOnMousePressed(e->
+        {
+            startDragx=e.getSceneX();
+            startDragy=e.getSceneY();
+            System.out.println(startDragx+" "+startDragy);
+            
+        });
+        iceshooter.setOnMouseReleased(e->
+        {
+            
+            iceshooter.setTranslateX(e.getSceneX()-startDragx);
+            iceshooter.setTranslateY(e.getSceneY()-startDragy);
+            
+            iceshooter.setOnMousePressed(null);
+            iceshooter.setOnMouseReleased(null);
+            
+            /*Image sunflower1= new Image("/../Static/images/sunflower2.png");
+            ImageView sn1=new ImageView(sunflower1);
+            apl.getChildren().add(sn1);
+            sn1.setLayoutY(startDragy);
+            sn1.setLayoutX(startDragx);
+            
+            //Image snf=new Image("@../Static/images/sunflower2.png");
+            //ImageView sunfl=new ImageView(snf);*/
+            
+        });
+        BWallnut.setOnMousePressed(e->
+        {
+            startDragx=e.getSceneX();
+            startDragy=e.getSceneY();
+            System.out.println(startDragx+" "+startDragy);
+            
+        });
+        BWallnut.setOnMouseReleased(e->
+        {
+            
+            BWallnut.setTranslateX(e.getSceneX()-startDragx);
+            BWallnut.setTranslateY(e.getSceneY()-startDragy);
+            
+            BWallnut.setOnMousePressed(null);
+            BWallnut.setOnMouseReleased(null);
+            
+            /*Image sunflower1= new Image("/../Static/images/sunflower2.png");
+            ImageView sn1=new ImageView(sunflower1);
+            apl.getChildren().add(sn1);
+            sn1.setLayoutY(startDragy);
+            sn1.setLayoutX(startDragx);
+            
+            //Image snf=new Image("@../Static/images/sunflower2.png");
+            //ImageView sunfl=new ImageView(snf);*/
             
         });
         
